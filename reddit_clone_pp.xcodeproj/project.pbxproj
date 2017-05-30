@@ -13,6 +13,13 @@
 		8799660A1EDDCBA5007F5D57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879966081EDDCBA5007F5D57 /* Main.storyboard */; };
 		8799660C1EDDCBA5007F5D57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8799660B1EDDCBA5007F5D57 /* Assets.xcassets */; };
 		8799660F1EDDCBA5007F5D57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8799660D1EDDCBA5007F5D57 /* LaunchScreen.storyboard */; };
+		879966171EDDCBCA007F5D57 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879966161EDDCBCA007F5D57 /* Home.storyboard */; };
+		879966191EDDCBD8007F5D57 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879966181EDDCBD8007F5D57 /* Search.storyboard */; };
+		8799661B1EDDCCDB007F5D57 /* NewPost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8799661A1EDDCCDB007F5D57 /* NewPost.storyboard */; };
+		8799661D1EDDCCED007F5D57 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8799661C1EDDCCED007F5D57 /* Profile.storyboard */; };
+		8799661F1EDDDA51007F5D57 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8799661E1EDDDA51007F5D57 /* Message.storyboard */; };
+		879966211EDDDB2E007F5D57 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879966201EDDDB2E007F5D57 /* Post.swift */; };
+		879966231EDDDB37007F5D57 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879966221EDDDB37007F5D57 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		8799660B1EDDCBA5007F5D57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8799660E1EDDCBA5007F5D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		879966101EDDCBA5007F5D57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		879966161EDDCBCA007F5D57 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		879966181EDDCBD8007F5D57 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		8799661A1EDDCCDB007F5D57 /* NewPost.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewPost.storyboard; sourceTree = "<group>"; };
+		8799661C1EDDCCED007F5D57 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		8799661E1EDDDA51007F5D57 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		879966201EDDDB2E007F5D57 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		879966221EDDDB37007F5D57 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +72,15 @@
 			children = (
 				879966021EDDCBA5007F5D57 /* AppDelegate.swift */,
 				879966041EDDCBA5007F5D57 /* FirstViewController.swift */,
+				879966201EDDDB2E007F5D57 /* Post.swift */,
+				879966221EDDDB37007F5D57 /* User.swift */,
 				879966061EDDCBA5007F5D57 /* SecondViewController.swift */,
 				879966081EDDCBA5007F5D57 /* Main.storyboard */,
+				879966161EDDCBCA007F5D57 /* Home.storyboard */,
+				879966181EDDCBD8007F5D57 /* Search.storyboard */,
+				8799661A1EDDCCDB007F5D57 /* NewPost.storyboard */,
+				8799661C1EDDCCED007F5D57 /* Profile.storyboard */,
+				8799661E1EDDDA51007F5D57 /* Message.storyboard */,
 				8799660B1EDDCBA5007F5D57 /* Assets.xcassets */,
 				8799660D1EDDCBA5007F5D57 /* LaunchScreen.storyboard */,
 				879966101EDDCBA5007F5D57 /* Info.plist */,
@@ -99,6 +120,7 @@
 				TargetAttributes = {
 					879965FE1EDDCBA5007F5D57 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = QMGVL45SJP;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,8 +149,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8799660F1EDDCBA5007F5D57 /* LaunchScreen.storyboard in Resources */,
+				8799661B1EDDCCDB007F5D57 /* NewPost.storyboard in Resources */,
 				8799660C1EDDCBA5007F5D57 /* Assets.xcassets in Resources */,
+				879966171EDDCBCA007F5D57 /* Home.storyboard in Resources */,
 				8799660A1EDDCBA5007F5D57 /* Main.storyboard in Resources */,
+				8799661D1EDDCCED007F5D57 /* Profile.storyboard in Resources */,
+				8799661F1EDDDA51007F5D57 /* Message.storyboard in Resources */,
+				879966191EDDCBD8007F5D57 /* Search.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +169,8 @@
 				879966071EDDCBA5007F5D57 /* SecondViewController.swift in Sources */,
 				879966031EDDCBA5007F5D57 /* AppDelegate.swift in Sources */,
 				879966051EDDCBA5007F5D57 /* FirstViewController.swift in Sources */,
+				879966231EDDDB37007F5D57 /* User.swift in Sources */,
+				879966211EDDDB2E007F5D57 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QMGVL45SJP;
 				INFOPLIST_FILE = reddit_clone_pp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "thepoppingone.reddit-clone-pp";
@@ -278,6 +308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QMGVL45SJP;
 				INFOPLIST_FILE = reddit_clone_pp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "thepoppingone.reddit-clone-pp";
