@@ -29,10 +29,16 @@ class NewTopicViewController: UIViewController {
     
     @IBAction func newTopicAddButtonTapped(_ sender: Any) {
         let newTopicText = newTopicNameTextField.text
-        let newTopic = Topic(id: DataSingleton.shared.topicArray.count, text: newTopicText!, community: "Random - Default", upvotes: 0, authorId: DataSingleton.shared.currentUserId)
-        DataSingleton.shared.topicArray.append(newTopic)
-        newTopicNameTextField.text = ""
-        notificationLabel.text = "Topic Added!"
+        if let text = newTopicText{
+            if text.characters.count > 255 {
+                notificationLabel.text = "Text is too long!"
+            }else {
+                let newTopic = Topic(id: DataSingleton.shared.topicArray.count, text: newTopicText!, community: "Random - Default", upvotes: 0, authorId: DataSingleton.shared.currentUserId)
+                DataSingleton.shared.topicArray.append(newTopic)
+                newTopicNameTextField.text = ""
+                notificationLabel.text = "Topic Added!"
+            }
+        }
     }
 
     /*
