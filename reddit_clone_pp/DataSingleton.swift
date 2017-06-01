@@ -66,8 +66,12 @@ final class DataSingleton {
         
         let user1 = User(id: 1, name: "Poh Peng", karma: 20)
         let user2 = User(id: 2, name: "Ronald", karma: 10)
+        let user3 = User(id: 3, name: "Tommy", karma: 30)
+        let user4 = User(id: 4, name: "Boon Jun", karma: 40)
         userArray.append(user1)
         userArray.append(user2)
+        userArray.append(user3)
+        userArray.append(user4)
         sortTopicArray()
     }
     

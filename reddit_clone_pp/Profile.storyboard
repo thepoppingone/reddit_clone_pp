@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aec-oZ-bpj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EfJ-Ya-IEI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Profile-->
+        <!--Switch User-->
         <scene sceneID="kch-rI-KMm">
             <objects>
-                <viewController id="aec-oZ-bpj" sceneMemberID="viewController">
+                <viewController id="aec-oZ-bpj" customClass="ProfileViewController" customModule="reddit_clone_pp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1kl-1N-CB0"/>
                         <viewControllerLayoutGuide type="bottom" id="11T-tP-8TF"/>
@@ -20,14 +21,100 @@
                     <view key="view" contentMode="scaleToFill" id="hvE-nK-63u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0M-bh-7Ae">
+                                <rect key="frame" x="74" y="340" width="44" height="30"/>
+                                <state key="normal" title="User 1"/>
+                                <connections>
+                                    <action selector="user1Selected:" destination="aec-oZ-bpj" eventType="touchUpInside" id="8D7-Gi-Y8E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00O-8s-WqY">
+                                <rect key="frame" x="232" y="340" width="46" height="30"/>
+                                <state key="normal" title="User 2"/>
+                                <connections>
+                                    <action selector="user2Selected:" destination="aec-oZ-bpj" eventType="touchUpInside" id="JqU-ei-0Wr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvX-Vb-K3G">
+                                <rect key="frame" x="74" y="436" width="46" height="30"/>
+                                <state key="normal" title="User 3"/>
+                                <connections>
+                                    <action selector="user3Selected:" destination="aec-oZ-bpj" eventType="touchUpInside" id="QWW-Nw-9z3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwp-Uh-kxB">
+                                <rect key="frame" x="232" y="436" width="46" height="30"/>
+                                <state key="normal" title="User 4"/>
+                                <connections>
+                                    <action selector="user4Selected:" destination="aec-oZ-bpj" eventType="touchUpInside" id="iFY-sr-FHk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select User Below:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dak-K6-vQO">
+                                <rect key="frame" x="115" y="259" width="144" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Selected User:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkl-LF-NSQ">
+                                <rect key="frame" x="100" y="99" width="175" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mg7-Jm-3xM">
+                                <rect key="frame" x="170.5" y="138" width="33.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.79089236259999995" green="0.1944936216" blue="0.26275232430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hvX-Vb-K3G" firstAttribute="leading" secondItem="g0M-bh-7Ae" secondAttribute="leading" id="4oA-zj-pDM"/>
+                            <constraint firstItem="g0M-bh-7Ae" firstAttribute="top" secondItem="dak-K6-vQO" secondAttribute="bottom" constant="60" id="6Ua-5f-MB3"/>
+                            <constraint firstItem="pkl-LF-NSQ" firstAttribute="top" secondItem="1kl-1N-CB0" secondAttribute="bottom" constant="35" id="88W-d5-kaK"/>
+                            <constraint firstItem="00O-8s-WqY" firstAttribute="top" secondItem="g0M-bh-7Ae" secondAttribute="top" id="FX3-Ge-pYN"/>
+                            <constraint firstItem="xwp-Uh-kxB" firstAttribute="leading" secondItem="00O-8s-WqY" secondAttribute="leading" id="FZk-Di-DgT"/>
+                            <constraint firstItem="hvX-Vb-K3G" firstAttribute="top" secondItem="g0M-bh-7Ae" secondAttribute="bottom" constant="66" id="I2O-AT-leQ"/>
+                            <constraint firstItem="00O-8s-WqY" firstAttribute="leading" secondItem="g0M-bh-7Ae" secondAttribute="trailing" constant="114" id="KSc-A8-g1B"/>
+                            <constraint firstItem="dak-K6-vQO" firstAttribute="centerX" secondItem="hvE-nK-63u" secondAttribute="centerX" id="TNr-sE-rwq"/>
+                            <constraint firstItem="Mg7-Jm-3xM" firstAttribute="top" secondItem="pkl-LF-NSQ" secondAttribute="bottom" constant="18" id="X1v-2Z-yfa"/>
+                            <constraint firstItem="dak-K6-vQO" firstAttribute="top" secondItem="Mg7-Jm-3xM" secondAttribute="bottom" constant="100" id="bN9-1p-2Nj"/>
+                            <constraint firstItem="xwp-Uh-kxB" firstAttribute="top" secondItem="hvX-Vb-K3G" secondAttribute="top" id="hLf-7j-TJ6"/>
+                            <constraint firstItem="Mg7-Jm-3xM" firstAttribute="centerX" secondItem="hvE-nK-63u" secondAttribute="centerX" id="j9q-Xk-WiB"/>
+                            <constraint firstItem="g0M-bh-7Ae" firstAttribute="leading" secondItem="hvE-nK-63u" secondAttribute="leadingMargin" constant="58" id="vJU-z8-yq2"/>
+                            <constraint firstItem="pkl-LF-NSQ" firstAttribute="centerX" secondItem="hvE-nK-63u" secondAttribute="centerX" id="xDc-wi-z09"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="user" id="kIQ-Ju-0NL"/>
+                    <navigationItem key="navigationItem" title="Switch User" id="AvG-ax-ydL"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="currentUserLabel" destination="Mg7-Jm-3xM" id="oVL-71-rLu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGi-Bm-00C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-52" y="74"/>
+            <point key="canvasLocation" x="887.20000000000005" y="73.313343328335833"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="JW9-ec-7yY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EfJ-Ya-IEI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="user" id="kIQ-Ju-0NL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nM9-LJ-ii5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aec-oZ-bpj" kind="relationship" relationship="rootViewController" id="hur-d3-Fy8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HKf-pT-9eb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52" y="73.313343328335833"/>
         </scene>
     </scenes>
     <resources>

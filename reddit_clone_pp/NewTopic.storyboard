@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3BX-Xz-h86">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="s6i-Et-SkC">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--New-->
+        <!--New Topic-->
         <scene sceneID="bVg-2F-UMO">
             <objects>
                 <viewController id="3BX-Xz-h86" customClass="NewTopicViewController" customModule="reddit_clone_pp" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,13 +23,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the text here!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XoX-hB-9GH">
-                                <rect key="frame" x="16" y="270" width="343" height="30"/>
+                                <rect key="frame" x="16" y="314" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rL8-Ra-B2L">
-                                <rect key="frame" x="127" y="350" width="121" height="30"/>
+                                <rect key="frame" x="127" y="394" width="121" height="30"/>
                                 <state key="normal" title="Create new topic!">
                                     <color key="titleColor" red="0.84875440599999996" green="0.1007887274" blue="0.24704633649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -38,34 +38,24 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic Created!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3o-kM-lOC">
-                                <rect key="frame" x="131" y="449" width="112" height="21"/>
+                                <rect key="frame" x="131" y="493" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CjF-Y7-PdM">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <items>
-                                    <navigationItem title="New Topic" id="hpw-MU-viI"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="J3o-kM-lOC" firstAttribute="centerX" secondItem="rL8-Ra-B2L" secondAttribute="centerX" id="HYy-L3-ry3"/>
                             <constraint firstItem="J3o-kM-lOC" firstAttribute="top" secondItem="rL8-Ra-B2L" secondAttribute="bottom" constant="69" id="IZK-OG-dHR"/>
-                            <constraint firstItem="CjF-Y7-PdM" firstAttribute="leading" secondItem="e19-br-dua" secondAttribute="leading" id="QPs-JC-5yb"/>
                             <constraint firstItem="XoX-hB-9GH" firstAttribute="leading" secondItem="e19-br-dua" secondAttribute="leadingMargin" id="T7I-eA-jvx"/>
                             <constraint firstItem="XoX-hB-9GH" firstAttribute="top" secondItem="Pjd-Kd-F2y" secondAttribute="bottom" constant="250" id="V8j-Ab-HS4"/>
                             <constraint firstItem="rL8-Ra-B2L" firstAttribute="top" secondItem="XoX-hB-9GH" secondAttribute="bottom" constant="50" id="XQl-hz-294"/>
-                            <constraint firstItem="CjF-Y7-PdM" firstAttribute="top" secondItem="Pjd-Kd-F2y" secondAttribute="bottom" id="YNQ-Ww-jTd"/>
-                            <constraint firstAttribute="trailing" secondItem="CjF-Y7-PdM" secondAttribute="trailing" id="bxd-TM-xA5"/>
                             <constraint firstItem="rL8-Ra-B2L" firstAttribute="centerX" secondItem="e19-br-dua" secondAttribute="centerX" id="fMy-qE-Pth"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XoX-hB-9GH" secondAttribute="trailing" id="yj8-26-286"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="New" image="plus" id="el9-Ln-mxb"/>
+                    <navigationItem key="navigationItem" title="New Topic" id="lKa-Yz-xGO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="newTopicNameTextField" destination="XoX-hB-9GH" id="oGd-Pw-26j"/>
@@ -73,6 +63,25 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lAK-MS-bzw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856.79999999999995" y="-3.1484257871064472"/>
+        </scene>
+        <!--New-->
+        <scene sceneID="Rqn-DZ-bxo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s6i-Et-SkC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="New" image="plus" id="el9-Ln-mxb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Aij-qa-dpL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3BX-Xz-h86" kind="relationship" relationship="rootViewController" id="AVb-xT-vNf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AJh-4c-R4k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-82.400000000000006" y="-3.1484257871064472"/>
         </scene>

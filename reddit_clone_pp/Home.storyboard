@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="flc-Cy-FjA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H3h-xh-riR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--Home-->
         <scene sceneID="Iia-wK-2g5">
             <objects>
-                <viewController id="flc-Cy-FjA" customClass="HomeViewController" customModule="reddit_clone_pp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="flc-Cy-FjA" customClass="HomeViewController" customModule="reddit_clone_pp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Inw-a7-eJj"/>
                         <viewControllerLayoutGuide type="bottom" id="m2J-bh-Mzz"/>
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="J0O-fU-F6z">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="E6a-Nu-aWS">
                                     <size key="itemSize" width="370" height="110"/>
@@ -113,13 +113,32 @@
                             <constraint firstAttribute="trailing" secondItem="J0O-fU-F6z" secondAttribute="trailing" id="SkY-nk-Z88"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="home" id="M5v-z9-DzT"/>
+                    <navigationItem key="navigationItem" title="Home" id="QAK-fB-C9D"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="homeCV" destination="J0O-fU-F6z" id="3Wj-B6-pSh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u0r-o0-q3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.79999999999995" y="138.98050974512745"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="huC-Or-RYm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H3h-xh-riR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="M5v-z9-DzT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cKx-Vy-dZe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="flc-Cy-FjA" kind="relationship" relationship="rootViewController" id="taP-g0-9zS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HtB-2a-4D1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5.5999999999999996" y="138.98050974512745"/>
         </scene>
