@@ -8,17 +8,20 @@
 
 import Foundation
 
-class Post{
+class Topic{
     var id: Int?
-    var title: String?
     var text: String?
     var community: String?
+    var upvotes: Int?
+    var commentsArray = [String]()
+    var authorId: Int?
     
-    init(id: Int, title: String, text: String, community: String){
+    init(id: Int, text: String, community: String, upvotes: Int, authorId: Int){
         self.id = id
-        self.title = title
         self.text = text
         self.community = community
+        self.upvotes = upvotes
+        self.authorId = authorId
     }
     
 }

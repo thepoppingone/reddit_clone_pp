@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3BX-Xz-h86">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New-->
+        <scene sceneID="bVg-2F-UMO">
+            <objects>
+                <viewController id="3BX-Xz-h86" customClass="NewTopicViewController" customModule="reddit_clone_pp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pjd-Kd-F2y"/>
+                        <viewControllerLayoutGuide type="bottom" id="R7P-ge-hIu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e19-br-dua">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the text here!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XoX-hB-9GH">
+                                <rect key="frame" x="16" y="270" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rL8-Ra-B2L">
+                                <rect key="frame" x="127" y="350" width="121" height="30"/>
+                                <state key="normal" title="Create new topic!">
+                                    <color key="titleColor" red="0.84875440599999996" green="0.1007887274" blue="0.24704633649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="newTopicAddButtonTapped:" destination="3BX-Xz-h86" eventType="touchUpInside" id="TrB-a8-bZt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic Created!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3o-kM-lOC">
+                                <rect key="frame" x="131" y="449" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CjF-Y7-PdM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <items>
+                                    <navigationItem title="New Topic" id="hpw-MU-viI"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J3o-kM-lOC" firstAttribute="centerX" secondItem="rL8-Ra-B2L" secondAttribute="centerX" id="HYy-L3-ry3"/>
+                            <constraint firstItem="J3o-kM-lOC" firstAttribute="top" secondItem="rL8-Ra-B2L" secondAttribute="bottom" constant="69" id="IZK-OG-dHR"/>
+                            <constraint firstItem="CjF-Y7-PdM" firstAttribute="leading" secondItem="e19-br-dua" secondAttribute="leading" id="QPs-JC-5yb"/>
+                            <constraint firstItem="XoX-hB-9GH" firstAttribute="leading" secondItem="e19-br-dua" secondAttribute="leadingMargin" id="T7I-eA-jvx"/>
+                            <constraint firstItem="XoX-hB-9GH" firstAttribute="top" secondItem="Pjd-Kd-F2y" secondAttribute="bottom" constant="250" id="V8j-Ab-HS4"/>
+                            <constraint firstItem="rL8-Ra-B2L" firstAttribute="top" secondItem="XoX-hB-9GH" secondAttribute="bottom" constant="50" id="XQl-hz-294"/>
+                            <constraint firstItem="CjF-Y7-PdM" firstAttribute="top" secondItem="Pjd-Kd-F2y" secondAttribute="bottom" id="YNQ-Ww-jTd"/>
+                            <constraint firstAttribute="trailing" secondItem="CjF-Y7-PdM" secondAttribute="trailing" id="bxd-TM-xA5"/>
+                            <constraint firstItem="rL8-Ra-B2L" firstAttribute="centerX" secondItem="e19-br-dua" secondAttribute="centerX" id="fMy-qE-Pth"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XoX-hB-9GH" secondAttribute="trailing" id="yj8-26-286"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="New" image="plus" id="el9-Ln-mxb"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="newTopicNameTextField" destination="XoX-hB-9GH" id="oGd-Pw-26j"/>
+                        <outlet property="notificationLabel" destination="J3o-kM-lOC" id="PoD-xN-EKr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lAK-MS-bzw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82.400000000000006" y="-3.1484257871064472"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" width="25" height="25"/>
+    </resources>
+</document>
