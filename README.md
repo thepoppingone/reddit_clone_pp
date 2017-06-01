@@ -1,5 +1,6 @@
 # Sample Reddit Clone App
-The app only consists of 3 tabs worth of navigation - Home, New, Profile
+The app only consists of 3 tabs worth of navigation - Home, New, Profile.
+
 This app does not connect to any remote database or server or even a local iOS persistence datastoer for simplicity sake
 
 ### Home
