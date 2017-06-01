@@ -41,6 +41,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         cell.communityLabel.text = DataSingleton.shared.topicArray[indexPath.row].community
         cell.textLabel.text = DataSingleton.shared.topicArray[indexPath.row].text
         cell.upvotesLabel.text = DataSingleton.shared.topicArray[indexPath.row].upvotes?.description
+        cell.userIdLabel.text = "userId: "+DataSingleton.shared.topicArray[indexPath.row].authorId!.description
         
         return cell
     }

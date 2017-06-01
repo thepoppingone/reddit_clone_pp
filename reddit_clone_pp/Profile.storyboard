@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,28 +22,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0M-bh-7Ae">
-                                <rect key="frame" x="74" y="340" width="44" height="30"/>
+                                <rect key="frame" x="79" y="340" width="44" height="30"/>
                                 <state key="normal" title="User 1"/>
                                 <connections>
                                     <action selector="user1Selected:" destination="aec-oZ-bpj" eventType="touchUpInside" id="8D7-Gi-Y8E"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00O-8s-WqY">
-                                <rect key="frame" x="232" y="340" width="46" height="30"/>
+                                <rect key="frame" x="237" y="340" width="46" height="30"/>
                                 <state key="normal" title="User 2"/>
                                 <connections>
                                     <action selector="user2Selected:" destination="aec-oZ-bpj" eventType="touchUpInside" id="JqU-ei-0Wr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvX-Vb-K3G">
-                                <rect key="frame" x="74" y="436" width="46" height="30"/>
+                                <rect key="frame" x="79" y="436" width="46" height="30"/>
                                 <state key="normal" title="User 3"/>
                                 <connections>
                                     <action selector="user3Selected:" destination="aec-oZ-bpj" eventType="touchUpInside" id="QWW-Nw-9z3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwp-Uh-kxB">
-                                <rect key="frame" x="232" y="436" width="46" height="30"/>
+                                <rect key="frame" x="237" y="436" width="46" height="30"/>
                                 <state key="normal" title="User 4"/>
                                 <connections>
                                     <action selector="user4Selected:" destination="aec-oZ-bpj" eventType="touchUpInside" id="iFY-sr-FHk"/>
@@ -72,6 +71,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hvX-Vb-K3G" firstAttribute="leading" secondItem="g0M-bh-7Ae" secondAttribute="leading" id="4oA-zj-pDM"/>
+                            <constraint firstItem="dak-K6-vQO" firstAttribute="leading" secondItem="g0M-bh-7Ae" secondAttribute="trailing" constant="-8" id="51i-al-8Gk"/>
                             <constraint firstItem="g0M-bh-7Ae" firstAttribute="top" secondItem="dak-K6-vQO" secondAttribute="bottom" constant="60" id="6Ua-5f-MB3"/>
                             <constraint firstItem="pkl-LF-NSQ" firstAttribute="top" secondItem="1kl-1N-CB0" secondAttribute="bottom" constant="35" id="88W-d5-kaK"/>
                             <constraint firstItem="00O-8s-WqY" firstAttribute="top" secondItem="g0M-bh-7Ae" secondAttribute="top" id="FX3-Ge-pYN"/>
@@ -83,7 +83,6 @@
                             <constraint firstItem="dak-K6-vQO" firstAttribute="top" secondItem="Mg7-Jm-3xM" secondAttribute="bottom" constant="100" id="bN9-1p-2Nj"/>
                             <constraint firstItem="xwp-Uh-kxB" firstAttribute="top" secondItem="hvX-Vb-K3G" secondAttribute="top" id="hLf-7j-TJ6"/>
                             <constraint firstItem="Mg7-Jm-3xM" firstAttribute="centerX" secondItem="hvE-nK-63u" secondAttribute="centerX" id="j9q-Xk-WiB"/>
-                            <constraint firstItem="g0M-bh-7Ae" firstAttribute="leading" secondItem="hvE-nK-63u" secondAttribute="leadingMargin" constant="58" id="vJU-z8-yq2"/>
                             <constraint firstItem="pkl-LF-NSQ" firstAttribute="centerX" secondItem="hvE-nK-63u" secondAttribute="centerX" id="xDc-wi-z09"/>
                         </constraints>
                     </view>

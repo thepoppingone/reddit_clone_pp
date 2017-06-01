@@ -15,6 +15,7 @@ class HomeTopicCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var upvoteButton: UIButton!
     @IBOutlet weak var downvoteButton: UIButton!
     @IBOutlet weak var upvotesLabel: UILabel!
+    @IBOutlet weak var userIdLabel: UILabel!
     weak var collectionView: UICollectionView?
     
     var topicId: Int?
